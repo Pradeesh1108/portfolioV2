@@ -6,17 +6,38 @@ Source: https://sketchfab.com/3d-models/tenhun-falling-spaceman-fanart-9fd80b6a2
 Title: Tenhun Falling spaceman (FanArt)
 */
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { useMotionValue, useSpring } from 'motion/react'
+import { useFrame } from '@react-three/fiber'
 
 export function Astronaut(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/AstroManFalling.glb')
   const { actions } = useAnimations(animations, group)
+  useEffect(()=>{
+    if(animations.length>0){
+        actions[animations[0].name]?.play();
+    }
+  },[actions, animations]);
+
+  const yPosition = useMotionValue(5);
+  const ySpring = useSpring(yPosition, {dampling: 30});
+  useEffect(()=>{
+    ySpring.set(-1);
+  },[ySpring])
+  useFrame(()=>{
+    group.current.position.y = ySpring.get();
+  })
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} 
+           {...props} 
+           dispose={null}
+           rotation={[-Math.PI / 2, -0.2, 2.2]} 
+           scale={props.scale || 0.3}
+           position={props.position || [1.3, -1, 0]}>
       <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.193}>
+        <group name="Sketchfab_model" >
           <group name="Root">
             <group name="metarig">
               <primitive object={nodes.metarig_rootJoint} />
