@@ -31,12 +31,12 @@ const About = () => {
                     <p className="flex items-end text-5xl text-gray-500">
                         CODE IS CRAFT
                     </p>
-                    <Card style = {{rotate: "75deg", top: "30%", left : "20%"}} text="Coding is life" containerRef={grid2Container}/>
-                    <Card style = {{rotate: "100deg", top: "75%", left : "45%"}} text="Coding is fun" containerRef={grid2Container}/>
-                    <Card style = {{rotate: "20deg", top: "50%", left : "70%"}} text="Vanakam" containerRef={grid2Container} />
-                    <Card style = {{rotate: "75deg", top: "30%", left : "60%"}} text="Wathaaa" containerRef={grid2Container}/>
-                    <Card style = {{rotate: "75deg", top: "30%", left : "60%"}} image="assets/logos/csharp-pink.png" containerRef={grid2Container}/>
-                    <Card style = {{rotate: "60deg", top: "10%", left : "40%"}} image="assets/logos/dotnet-pink.png" containerRef={grid2Container}/>
+                    <Card style = {{rotate: "30deg", top: "25%", left : "1%"}} text="Coding is life" containerRef={grid2Container}/>
+                    <Card style = {{rotate: "10deg", top: "75%", left : "25%"}} text="Let the hustle compile" containerRef={grid2Container}/>
+                    <Card style = {{rotate: "20deg", top: "50%", left : "70%"}} text="$ git commit -m 'Built myself" containerRef={grid2Container} />
+                    <Card style = {{rotate: "40deg", top: "20%", left : "60%"}} text="import { Coffee } from 'life'" containerRef={grid2Container}/>
+                    <Card style = {{rotate: "75deg", top: "30%", left : "60%"}} image="assets/logos/react.svg" containerRef={grid2Container}/>
+                    <Card style = {{rotate: "60deg", top: "10%", left : "40%"}} image="assets/logos/threejs.svg" containerRef={grid2Container}/>
 
                 </div>
             </div>

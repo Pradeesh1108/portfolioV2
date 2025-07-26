@@ -3,6 +3,7 @@ import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
+import Contact from './sections/Contact'
 
 const App = () => {
   return (
@@ -11,9 +12,7 @@ const App = () => {
         <Hero />
         <About />
         <Projects/>
-        <section className='min-h-screen'/>
-        <section className='min-h-screen'/>
-        <section className='min-h-screen'/> 
+        <Contact/>
         {/* achievement */}
         {/* contact */}
         {/* footer */}
