@@ -10,6 +10,7 @@ export function Frameworks() {
     "fastapi-original",
     "apple-original",
     "git",
+    "docker-original",
     "html5",
     "javascript",
     "github",

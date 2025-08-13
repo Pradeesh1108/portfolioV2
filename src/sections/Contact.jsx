@@ -1,6 +1,7 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
-
+import Alert from "../ components/Alert"
+import { Particles } from "../ components/Particles"
 // service_avxff27
 // template_j779obt
 
@@ -12,6 +13,19 @@ const Contact = () => {
         message: "",
     })
     const [isLoading, setIsLoading] = useState(false)
+    const [showAlert, setShowAlert] = useState(false)
+    const [alertType, setAlertType] = useState("success")
+    const [alertMessage, setAlertMessage] = useState("")
+
+    const showAlertMessage = (type, message) => {
+        setAlertType(type)
+        setAlertMessage(message)
+        setShowAlert(true)
+        setTimeout(() => {
+            setShowAlert(false)
+        }, 5000)
+    }
+
     const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})
     }
@@ -30,12 +44,12 @@ const Contact = () => {
         },
     "QgDSI8Up50eeCNyZ2")
         setIsLoading(false);
-        alert("Success")
         setFormData({name: "", email:"", message:""})
+        showAlertMessage('success', "You message has been sent!")
             
         } catch (error) {
             setIsLoading(false);
-            alert("Failed")
+            showAlertMessage('error', "Failed to send message")
             
         }
 
@@ -44,6 +58,15 @@ const Contact = () => {
 
   return (
     <section className="relative flex items-center c-space section-spacing">
+        <Particles 
+        className="absolute inset-0 -z-50"
+        quantity={100}
+        staticity={50}
+        ease={80}
+        color={"#ffffff"}
+        refresh
+        />
+        { showAlert && <Alert type={alertType} text={alertMessage} />}
         <div className="flex flex-col items-center justify-center max-w-md p-5
         mx-auto border border-white/10 rounded-2xl bg-primary">
             <div className="flex flex-col items-start w-full gap-5 mb-10">
