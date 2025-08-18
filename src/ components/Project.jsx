@@ -5,6 +5,7 @@ const Project = ({title,
                   description, 
                   subDescription, 
                   href, 
+                  liveLink,
                   image, 
                   tags,
                   setPreview,
@@ -39,6 +40,7 @@ const Project = ({title,
                         image={image} 
                         tags={tags} 
                         href={href}
+                        liveLink={liveLink}
                         closeModel={()=>setIsHidden(false)}
                         />
                         )}

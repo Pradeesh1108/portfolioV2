@@ -33,7 +33,7 @@ const About = () => {
             <div className="grid-default-color grid-2">
                 <div ref={grid2Container} className="flex items-center justify-center w-full h-full">
                     <p className="flex items-end text-5xl text-gray-500">
-                        CODE IS CRAFT
+                    Turning coffee into code
                     </p>
                     <Card style = {{rotate: "30deg", top: "25%", left : "1%"}} text="Coding is life" containerRef={grid2Container}/>
                     <Card style = {{rotate: "10deg", top: "75%", left : "25%"}} text="Let the hustle compile" containerRef={grid2Container}/>

@@ -11,7 +11,8 @@ export const myProjects = [
     "Implemented career path suggestions and skill gap analysis, boosting user job readiness and success rates by 40%.",
     "Designed a responsive frontend and seamless backend integration for an interactive and user-friendly experience.",
   ],
-    href: "hire-mate-ai-green.vercel.app",
+    href: "https://github.com/Pradeesh1108/hireMate-AI-frontend.git",
+    liveLink: "https://hire-mate-ai-green.vercel.app",
     logo: "",
     image: "/assets/projects/hiremate.png",
     tags: [
@@ -49,7 +50,8 @@ export const myProjects = [
       "Integrated MongoDB with Mongoose for efficient NoSQL data modeling and storage.",
       "Built a reliable backend foundation for contact management applications, supporting multiple frontend clients.",
     ],
-    href: "",
+    href: "https://github.com/Pradeesh1108/contact-manager-app-backend.git",
+    liveLink: "https://mycontactsapp-backend.onrender.com",
     logo: "",
     image: "/assets/projects/my-contacts.png",
     tags: [
@@ -81,7 +83,8 @@ export const myProjects = [
       "Integrated an AI-powered medical chatbot to provide users with diagnostic insights and interactive support.",
       "Optimized the system for seamless accessibility, making advanced medical AI tools available through an intuitive interface.",
     ],
-    href: "",
+    href: "https://github.com/Pradeesh1108/brain-tumor-prediction.git",
+    liveLink: "",
     logo: "",
     image: "/assets/projects/brain-tumor.jpeg",
     tags: [
@@ -123,7 +126,8 @@ export const myProjects = [
       "Integrated Nodemailer with Gmail SMTP for secure, automated email delivery of summaries.",
       "Built an intuitive UI allowing transcript upload, on-demand summary editing, and one-click email sharing.",
     ],
-    href: "",
+    href: "https://github.com/Pradeesh1108/ai-meeting-notes-summarizer.git",
+    liveLink: "ai-notes-summarizer-dusky.vercel.app",
     logo: "",
     image: "/assets/projects/ai-notes.png",
     tags: [
@@ -165,7 +169,8 @@ export const myProjects = [
       "Integrated project showcases, resume links, and contact form for professional presentation.",
       "Optimized performance for fast load times while maintaining immersive visuals and animations.",
     ],
-    href: "",
+    href: "https://github.com/Pradeesh1108/portfolioV2.git",
+    liveLink: "",
     logo: "",
     image: "/assets/projects/portfolio.png",
     tags: [
@@ -192,7 +197,7 @@ export const myProjects = [
 export const mySocials = [
   {
     name: "WhatsApp",
-    href: "",
+    href: "https://wa.me/919876543210",
     icon: "/assets/socials/whatsApp.svg",
   },
   {

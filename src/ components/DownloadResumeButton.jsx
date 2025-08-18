@@ -2,7 +2,15 @@ import { motion, AnimatePresence } from "motion/react";
 
 const DownloadResumeButton = () => {
     const handleDownload = () => {
-        window.open('/resume.pdf', '_blank');
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = '/resume/Pradeesh Sivaprakasam Resume.pdf';
+        link.download = 'Pradeesh Sivaprakasam Resume.pdf';
+        
+        // Append to body, click, and remove
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 
     return (

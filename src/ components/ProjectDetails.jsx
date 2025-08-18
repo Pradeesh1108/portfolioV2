@@ -1,4 +1,5 @@
 import { motion } from "motion/react"
+import LiveButton from "./LiveButton"
 
 const ProjectDetails = ({title, 
                         description, 
@@ -6,6 +7,7 @@ const ProjectDetails = ({title,
                         image, 
                         tags, 
                         href,
+                        liveLink,
                         closeModel,
                         
                     }) => {
@@ -14,8 +16,7 @@ const ProjectDetails = ({title,
         justify-center w-full h-full overflow-hidden
         backdrop-blur-sm">
             <motion.div className="relative max-w-2xl border shadow-sm
-                    rounded-2xl bg-gradient-to-l 
-                    from-midnight to-navy
+                    rounded-2xl bg-gray-100
                     border-white/10"
                     initial={{opacity: 0,scale: 0.5}}
                     animate={{opacity: 1, scale: 1}}
@@ -27,12 +28,12 @@ const ProjectDetails = ({title,
                     <img src="assets/close.svg" className="w-6 h-6" alt="" />
                 </button>
                 <img src={image} alt={title} className="w-full rounded-t-2xl" />
-                <div className="">
-                    <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
-                    <p className="mb-3 font-normal text-neutral-400">
+                <div className="p-6">
+                    <h5 className="mb-2 text-2xl font-bold text-gray-900">{title}</h5>
+                    <p className="mb-3 font-normal text-gray-700">
                         {description}</p>
                     {subDescription.map((subDesc, index)=>(
-                        <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>
+                        <p key={index} className="mb-3 font-normal text-gray-700">{subDesc}</p>
                     ))}
                     <div className="flex items-center justify-between mt-4">
                         <div className="flex mb-2 gap-3">
@@ -44,9 +45,18 @@ const ProjectDetails = ({title,
                                     
                             ))}
                         </div>
-                        <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
-                            View Project <img src="assets/arrow-up.svg" className="size-4" href={href} />
-                        </a>
+                        <div className="flex items-center gap-3">
+                            {liveLink && <LiveButton href={liveLink} />}
+                            <a 
+                                href={href} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-gray-900"
+                            >
+                                <img src="assets/logos/github.svg" className="size-4" alt="GitHub" />
+                                View Code
+                            </a>
+                        </div>
 
                     </div>
 
