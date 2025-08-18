@@ -2,6 +2,7 @@ import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import Alert from "../ components/Alert"
 import { Particles } from "../ components/Particles"
+
 // service_avxff27
 // template_j779obt
 
@@ -12,11 +13,13 @@ const Contact = () => {
         email: "",
         message: "",
     })
+
+
     const [isLoading, setIsLoading] = useState(false)
     const [showAlert, setShowAlert] = useState(false)
     const [alertType, setAlertType] = useState("success")
     const [alertMessage, setAlertMessage] = useState("")
-
+    
     const showAlertMessage = (type, message) => {
         setAlertType(type)
         setAlertMessage(message)
@@ -57,7 +60,7 @@ const Contact = () => {
     };
 
   return (
-    <section className="relative flex items-center c-space section-spacing">
+    <section id="contact" className="relative flex items-center c-space py-16">
         <Particles 
         className="absolute inset-0 -z-50"
         quantity={100}
