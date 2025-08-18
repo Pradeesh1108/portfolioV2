@@ -132,7 +132,7 @@ export const myProjects = [
       "Built an intuitive UI allowing transcript upload, on-demand summary editing, and one-click email sharing.",
     ],
     href: "https://github.com/Pradeesh1108/ai-meeting-notes-summarizer.git",
-    liveLink: "ai-notes-summarizer-dusky.vercel.app",
+    liveLink: "https://ai-notes-summarizer-dusky.vercel.app/",
     logo: "",
     image: "/assets/projects/ai-notes.png",
     tags: [
