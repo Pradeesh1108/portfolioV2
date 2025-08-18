@@ -2,7 +2,7 @@ import { useState } from "react";
 import Project from "../ components/Project"
 import {myProjects} from "../constants"
 import { motion, useMotionValue, useSpring  } from "motion/react"
-import GitHubLink from "../ components/GithubLink";
+import GitHubLink from "../ components/GitHubLink";
 const Projects = () => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
