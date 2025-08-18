@@ -4,50 +4,30 @@ const Achievements = () => {
   const achievementsData = [
     {
       id: 1,
-      title: "Hackathon Champion",
-      category: "Competition",
-      date: "2023",
-      description: "Won first place in the National CodeFest hackathon, building an AI-powered educational platform in 48 hours.",
-      impact: "Led a team of 4 developers to victory against 200+ participants",
-      tags: ["AI/ML", "Team Leadership", "Innovation", "Education Tech"],
-      icon: "🏆"
+      title: "Horizon'25 Finalist",
+      category: "Hackathon",
+      date: "2025",
+      description: "Built an AI-powered AgriAssist app in 24 hours, designed to help farmers with crop disease detection, market insights, and scheme navigation.",
+      impact: "Reached the Horizon'25 finals and sparked a startup idea from the project",
+      tags: ["AI/ML", "Hackathon", "AgriTech", "Innovation"],
+      icon: "🌱"
     },
     {
       id: 2,
-      title: "Open Source Contributor",
-      category: "Community",
-      date: "2022-Present",
-      description: "Active contributor to major open-source projects including React, .NET Core, and various machine learning libraries.",
-      impact: "100+ commits across 15+ repositories, helping thousands of developers worldwide",
-      tags: ["Open Source", "React", ".NET", "Machine Learning"],
-      icon: "🌟"
+      title: "Inter College Competitions",
+      category: "Competition",
+      date: "2024-Present",
+      description: "Actively participating in various inter-college competitions, including building an AI-powered AgriAssist app in 24 hours to support farmers with crop disease detection, market insights, and scheme navigation.",
+      impact: "Gained diverse technical skills, leadership experience, and collaborative problem-solving abilities while reaching the Horizon'25 finals and sparking a startup idea from the project.",
+      tags: ["AI/ML", "Hackathon", "Innovation", "Leadership"],
+      icon: "🏆"
     },
-    {
-      id: 3,
-      title: "Tech Conference Speaker",
-      category: "Speaking",
-      date: "2023",
-      description: "Presented on 'Modern Web Development with Blazor and React' at the International Developer Conference.",
-      impact: "Reached 500+ developers, received 4.9/5 rating from attendees",
-      tags: ["Public Speaking", "Blazor", "React", "Web Development"],
-      icon: "🎤"
-    },
-    {
-      id: 4,
-      title: "Mentorship Program Lead",
-      category: "Leadership",
-      date: "2022-2024",
-      description: "Led a 6-month mentorship program for 50+ junior developers, helping them transition into full-stack development.",
-      impact: "95% of mentees secured developer positions within 3 months",
-      tags: ["Mentorship", "Leadership", "Full-Stack", "Career Development"],
-      icon: "👥"
-    }
   ];
 
 
   return (
     <section id="achievements" className="c-space py-16">
-      <h2 className="text-heading">Achievements & Recognition</h2>
+      <h2 className="text-heading">Achievements</h2>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-2 h-[1px] w-full"></div>
 
 
@@ -112,16 +92,16 @@ const Achievements = () => {
           </div>
           <div className="space-y-3">
             <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
-              <span className="subtext">Microsoft Certified Developer</span>
-              <span className="text-aqua text-sm">2023</span>
+              <span className="subtext">Artificial Intelligence Primer Certification</span>
+              <span className="text-aqua text-sm">2025</span>
             </div>
             <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
-              <span className="subtext">AWS Solutions Architect</span>
-              <span className="text-aqua text-sm">2022</span>
+              <span className="subtext">Deep Learning for Developers</span>
+              <span className="text-aqua text-sm">2025</span>
             </div>
             <div className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
-              <span className="subtext">Google Cloud Professional</span>
-              <span className="text-aqua text-sm">2022</span>
+              <span className="subtext">Introduction to Git</span>
+              <span className="text-aqua text-sm">2025</span>
             </div>
           </div>
         </div>

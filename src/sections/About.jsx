@@ -20,7 +20,10 @@ const About = () => {
                 alt="" />
                 <div className="z-10">
                     <p className="headtext">Hi I'm Pradeesh</p>
-                    <p className="subtext">Aspiring Software Developer</p>
+                    <p className="subtext"> Aspiring AI/ML engineer passionate about building intelligent, 
+                                            human-centered applications. Skilled in deep learning 
+                                            and backend systems, while also creating modern, 
+                                            responsive web apps with React</p>
                 </div>
                 <div className="absolute inset-x-0 pointer-events-none 
                 -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo">    
@@ -57,7 +60,7 @@ const About = () => {
             <div className="grid-special-color grid-4">
                 <div className="flex flex-col items-center justify-center gap-4 size-full">
                     <p className="text-center headtext">
-                        Looking to hire?
+                    Searching for a developer who blends AI with full-stack expertise?
                     </p>
                     <DownloadResumeButton />
                 </div>
