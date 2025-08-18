@@ -1,78 +1,192 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
-    subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
-    ],
-    href: "",
+  title: "HireMate AI",
+  description:
+    "An AI-powered career assistant that analyzes resumes, conducts mock interviews, and generates detailed performance reports to help candidates prepare for real-world job applications.",
+  subDescription: [
+    "Built a scalable LLM-powered web application for automated resume parsing and ATS compatibility scoring, improving resume screening efficiency by 50%.",
+    "Developed an AI Interviewer module that simulates real interview scenarios, evaluates answers, and generates personalized feedback reports.",
+    "Integrated advanced NLP techniques for structured data extraction from resumes and precise candidate evaluation.",
+    "Implemented career path suggestions and skill gap analysis, boosting user job readiness and success rates by 40%.",
+    "Designed a responsive frontend and seamless backend integration for an interactive and user-friendly experience.",
+  ],
+    href: "hire-mate-ai-green.vercel.app",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/hiremate.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "FastAPI",
+        path: "/assets/logos/fastapi-original.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Gemini",
+        path: "/assets/logos/gemini.svg",
       },
     ],
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "MyContacts Backend API",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "A secure and scalable RESTful API built with Node.js, Express.js, and MongoDB for managing personal contacts with full user authentication and data isolation.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Implemented user authentication with JWT and bcrypt password hashing to ensure secure access and user data protection.",
+      "Developed comprehensive contact management features (CRUD operations) with user-specific data isolation.",
+      "Designed a clean architecture with middleware-based route protection, proper error handling, and modular code structure.",
+      "Integrated MongoDB with Mongoose for efficient NoSQL data modeling and storage.",
+      "Built a reliable backend foundation for contact management applications, supporting multiple frontend clients.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/my-contacts.png",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "Node JS",
+        path: "/assets/logos/nodejs-original-wordmark.svg",
       },
       {
         id: 2,
+        name: "Express JS",
+        path: "/assets/logos/express-original.svg",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb-original.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Brain Tumor Prediction Web App",
+    description:
+      "A deep learning-powered web application for MRI-based brain tumor detection and diagnosis support, enhanced with an LLM-driven medical chatbot for user assistance.",
+    subDescription: [
+      "Developed a deep learning pipeline using ResNet-50 for brain tumor classification and segmentation, achieving 90% accuracy.",
+      "Built a responsive web app with real-time prediction capabilities and clear result visualization for medical imaging.",
+      "Integrated an AI-powered medical chatbot to provide users with diagnostic insights and interactive support.",
+      "Optimized the system for seamless accessibility, making advanced medical AI tools available through an intuitive interface.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/brain-tumor.jpeg",
+    tags: [
+      {
+        id: 1,
+        name: "HTML",
+        path: "/assets/logos/html5.svg",
+      },
+      {
+        id: 2,
+        name: "CSS",
+        path: "/assets/logos/css3.svg",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+      {
+        id: 4,
+        name: "Python",
+        path: "/assets/logos/python-original.svg",
+      },
+      {
+        id: 5,
+        name: "TensorFlow",
+        path: "/assets/logos/tensorflow-original.svg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "AI Meeting Notes Summarizer",
+    description:
+      "A React and Node.js web app powered by Google Gemini AI that generates concise meeting summaries and delivers them via email with a modern, responsive interface.",
+    subDescription: [
+      "Implemented Google Gemini AI to process meeting transcripts and generate tailored summaries with custom prompt support.",
+      "Developed a full-stack system with React (Vite + Tailwind) frontend and Express.js backend for real-time processing.",
+      "Integrated Nodemailer with Gmail SMTP for secure, automated email delivery of summaries.",
+      "Built an intuitive UI allowing transcript upload, on-demand summary editing, and one-click email sharing.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/ai-notes.png",
+    tags: [
+      {
+        id: 1,
         name: "React",
         path: "/assets/logos/react.svg",
       },
       {
+        id: 2,
+        name: "Node Js",
+        path: "/assets/logos/nodejs-original-wordmark.svg",
+      },
+      {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Express Js",
+        path: "/assets/logos/express-original.svg",
       },
       {
         id: 4,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
+      {
+        id: 5,
+        name: "Gemini",
+        path: "/assets/logos/gemini.svg",
+      },
     ],
   },
+  {
+    id: 5,
+    title: "Modern 3D Portfolio Website",
+    description:
+      "A personal portfolio showcasing projects and skills through an interactive 3D design, built with React, Three.js, and TailwindCSS.",
+    subDescription: [
+      "Developed a fully responsive portfolio site with smooth animations and 3D interactive elements using Three.js.",
+      "Designed a clean, modern UI with TailwindCSS ensuring accessibility and seamless navigation across devices.",
+      "Integrated project showcases, resume links, and contact form for professional presentation.",
+      "Optimized performance for fast load times while maintaining immersive visuals and animations.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/portfolio.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Three JS",
+        path: "/assets/logos/threejs.svg",
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
+
 ];
 
 export const mySocials = [
