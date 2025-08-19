@@ -196,6 +196,40 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 5,
+    title: "Instagram Image Downloader",
+    description:
+      "A modern, responsive React web app that allows users to download high-quality images from Instagram posts with bulk download support and smooth, interactive UI features.",
+    subDescription: [
+      "Built with React (Vite + Tailwind) for fast performance and a visually appealing, responsive interface.",
+      "Implemented Instagram image extraction by integrating with a backend service to fetch and proxy media URLs securely.",
+      "Developed bulk download functionality with options for individual image downloads and fallback URLs.",
+      "Enhanced UX with toast notifications, loading states, hover animations, and error handling for failed loads.",
+      "Structured codebase with ESLint, PostCSS, and modular React components for maintainability.",
+    ],
+    href: "https://github.com/Pradeesh1108/image-saver.git",
+    liveLink: "https://image-saver-peach.vercel.app/",
+    logo: "",
+    image: "/assets/projects/image-saver.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+      {
+        id: 3,
+        name: "FastAPI",
+        path: "/assets/logos/fastapi-original.svg",
+      },
+    ],
+  }
 
 ];
 
