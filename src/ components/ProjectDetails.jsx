@@ -48,7 +48,12 @@ const ProjectDetails = ({title,
                         </div>
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
                             {liveLink && <LiveButton href={liveLink} />}
-                            <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-gray-900">
+                            <a 
+                                href={href} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation text-gray-900"
+                            >
                                 <img src="assets/logos/github.svg" className="w-4 h-4" alt="GitHub" />
                                 View Code
                             </a>
