@@ -198,7 +198,38 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+  id: 6,
+  title: "Secure Password Manager CLI",
+  description:
+    "A production-grade Python CLI password manager using PBKDF2 key derivation, Fernet encryption, and an SQLite-backed vault with strong security practices and clean, modular design.",
+  subDescription: [
+    "Implemented PBKDF2-HMAC-SHA256 (100,000 iterations) with a 16-byte random salt per vault for hardened key derivation.",
+    "Encrypted all secrets with Fernet (AES-128-CBC + HMAC-SHA256); the master password is never stored—only derived keys/salts persist.",
+    "Structured architecture: CLI interface (main.py), crypto layer (secure_encryption.py), and vault/data access (secure_vault.py, database.py).",
+    "Cross-platform commands for add/view/delete/list/search/change-password with atomic SQLite transactions for integrity.",
+    "Hardened I/O using getpass for hidden input, graceful error handling, and full vault re-encryption on master-password changes.",
+    "Developer-friendly setup with requirements.txt, VS Code settings, and quick self-tests for encryption and database health."
+  ],
+    href: "https://github.com/Pradeesh1108/password-manager-cli.git",
+    liveLink: "",
+    logo: "",
+    image: "/assets/projects/password_pro.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/logos/python-original.svg",
+      },
+      {
+        id: 2,
+        name: "Sqlite3",
+        path: "/assets/logos/sqlite.svg",
+      },
+    ],
+  }
+  ,
+  {
+    id: 7,
     title: "Modern 3D Portfolio Website",
     description:
       "A personal portfolio showcasing projects and skills through an interactive 3D design, built with React, Three.js, and TailwindCSS.",
