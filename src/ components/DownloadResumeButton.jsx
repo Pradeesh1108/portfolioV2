@@ -4,7 +4,7 @@ const DownloadResumeButton = () => {
     const handleDownload = () => {
         // Create a link element
         const link = document.createElement('a');
-        link.href = '/resume/Pradeesh Sivaprakasam Resume.pdf';
+        link.href = 'resume/714023247065_PRADEESH_S.pdf';
         link.download = 'Pradeesh Sivaprakasam Resume.pdf';
         
         // Append to body, click, and remove

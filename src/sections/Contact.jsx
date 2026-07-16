@@ -39,7 +39,7 @@ const Contact = () => {
 
         try {
             await emailjs.send("service_avxff27", "template_j779obt", {
-            form_data: formData.name,
+            from_name: formData.name,
             to_name: "Pradeesh S",
             from_email: formData.email,
             to_email: "pradeeshsivaprakasam@gmail.com",

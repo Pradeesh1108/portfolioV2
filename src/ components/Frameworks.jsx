@@ -19,7 +19,9 @@ export function Frameworks() {
     "tailwindcss",
     "vitejs",
     "postman-original",
-    "nextjs-original"
+    "LangChain Color",
+    "LangGraph SVG",
+    'Groq'
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
